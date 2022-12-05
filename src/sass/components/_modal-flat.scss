@@ -1,0 +1,142 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(47, 48, 58, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out;
+  z-index: 3;
+}
+
+.backdrop--is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  &.modal-flat {
+    transform: scale(1.25);
+  }
+}
+
+.modal-flat {
+  width: 320px;
+  min-height: 570px;
+  background-color: $second-font-color;
+  position: relative;
+  padding: 32px 40px;
+  transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(1);
+
+  @media screen and (min-width: $tablet) {
+    width: 571px;
+    min-height: 355px;
+    padding: 40px 32px;
+  }
+}
+
+.modal-flat__btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: $second-font-color;
+  cursor: pointer;
+}
+
+.modal-flat__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(42 / 28);
+  color: $dark-font;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.flat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.flat__img,
+.flat__layout,
+.flat__img img {
+  width: 100%;
+}
+
+.specification {
+  margin-bottom: 12px;
+}
+
+.specification__text {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  color: $dark-font;
+}
+
+.specification__numder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  color: $main-font-color;
+}
+
+.price__item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+  color: $main-font-color;
+
+  &:nth-child(2) {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: $dark-font;
+    margin-top: 8px;
+  }
+}
+
+.btn-contact {
+  display: block;
+  margin-top: 26px;
+  width: 192px;
+  height: 48px;
+  background-color: $main-font-color;
+  border-radius: 8px;
+  border: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+  color: $second-font-color;
+
+  @media screen and (min-width: $tablet) {
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 18px;
+
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+}

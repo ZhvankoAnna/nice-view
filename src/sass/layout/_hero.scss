@@ -1,0 +1,123 @@
+.hero {
+  max-width: 1280px;
+  height: 451px;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../images/hero/hero-bg-mob-new@1x.png);
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/hero-bg-mob-new@2x.png);
+  }
+
+  // @media screen and (min-width: $mobile) {
+  //   background-image: url(../images/hero/group-4@1x.jpg);
+  //   height: 480px;
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/hero/group-4@2x.jpg);
+  //   }
+  // }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(../images/hero/img1-tab@1x.png);
+    height: 720px;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/img1-tab@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url(../images/hero/img1-ds@1x.png);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/hero/img1-ds@2x.png);
+    }
+  }
+}
+
+.hero__container {
+  min-height: 451px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 60px;
+
+
+  @media screen and (min-width: $tablet) {
+    min-height: 720px;
+    padding-top: 32px;
+    padding-bottom: 100px;
+  }
+}
+
+.hero__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: calc(72 / 48);
+  width: 100%;
+  color: $main-font-color;
+
+  @media screen and (min-width: $tablet) {
+    line-height: calc(108 / 72);
+    font-size: 72px;
+  }
+}
+
+.hero__subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(24 / 16);
+
+  width: 193px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 246px;
+
+  color: $main-font-color;
+
+  @media screen and (min-width: $tablet) {
+    width: 484px;
+    line-height: calc(36 / 24);
+    font-size: 24px;
+    margin-bottom: 383px;
+  }
+}
+
+.hero__btn {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: calc(36 / 24);
+  border: none;
+
+  color: $dark-font;
+
+  width: 200px;
+  height: 50px;
+
+  background-color: $second-font-color;
+  border-radius: 16px;
+  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1) background-color
+    300ms cubic-bezier(0.4, 0, 0.2, 1) border-color 300ms
+    cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: $main-font-color;
+    border-color: white;
+  }
+  @media screen and (min-width: $tablet) {
+    // padding: 9px 62px;
+    width: 256px;
+    height: 54px;
+  }
+}

@@ -1,0 +1,23 @@
+@import './utils/vars';
+
+@import './base/common';
+@import './base/reset';
+@import './base/modern-normalize';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about-us';
+@import './layout/apartments';
+@import './layout/infrastructure';
+@import './layout/gallery';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/mobile-menu';
+
+
+
+@import './layout/contact-us-modal';
+@import './components/gallery-slider';
+@import './components/modal-flat';
+@import './layout/download-modal';
+@import './components/btn-up';

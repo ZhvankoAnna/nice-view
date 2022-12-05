@@ -1,0 +1,75 @@
+<body>
+
+  <div class="btn-up btn-up_hide"></div>
+  <header class="header">
+    <div class="container header__container">
+      <a class="logo" href="">
+        <svg class="icon__logo" width="56" height="56">
+          <use class="logo__menu" href="./images/icons.svg#loogo"></use>
+          <use class="logo__tablet" href="./images/icons.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="./index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about-us">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#apartments">Apartments</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#infrastructure">Infrastructure</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__button" data-contact-modal-open>Contact us</button>
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg class="icon__burger" width="24" height="24">
+          <use class="burger" href="./images/icons.svg#burger-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg class="icon__cross" width="30" height="30" aria-label="mobile-menu">
+        <use class="cross" href="./images/icons.svg#cross"></use>
+      </svg>
+    </button>
+
+    <ul class="menu__nav">
+      <li class="menu__nav--item">
+        <a class="menu__link" href="./index.html">Home</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#about-us">About</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#apartments">Apartments</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#infrastructure">Infrastructure</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#gallery">Gallery</a>
+      </li>
+      <li class="menu__nav--item">
+        <a class="menu__link" href="#contacts">Contacts</a>
+      </li>
+    </ul>
+  </div>
+</body>

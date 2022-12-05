@@ -1,0 +1,122 @@
+.swiper-wrapper {
+  align-items: center;
+  padding-bottom: 12px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 19px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 23px;
+  }
+}
+
+.swiper {
+  --swiper-theme-color: $background-back;
+  --swiper-navigation-size: 12px;
+  z-index: 0;
+
+  @media screen and (min-width: $tablet) {
+    --swiper-theme-color: #000000;
+    --swiper-navigation-size: 23px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: 1012px;
+    height: 590px;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  --swiper-pagination-bullet-inactive-color: #c4c4c4;
+  --swiper-pagination-bullet-size: 8px;
+  --swiper-pagination-bullet-horizontal-gap: 12px;
+  @media screen and (min-width: $tablet) {
+    --swiper-pagination-bullet-size: 11px;
+    --swiper-pagination-bullet-horizontal-gap: 16px;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  border: 1px solid $main-font-color;
+  --swiper-pagination-color: #c4c4c4;
+}
+
+.swiper-pagination {
+  margin-left: auto;
+  margin-right: auto;
+  --swiper-pagination-bullet-inactive-color: $swiper-pag-color;
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+}
+
+.swiper-controls {
+  position: relative;
+  --swiper-theme-color: $background-back;
+  --swiper-navigation-size: 12px;
+  bottom: 115px;
+  z-index: 0;
+
+  @media screen and (min-width: $mobile) {
+    bottom: 200px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    --swiper-navigation-size: 23px;
+    --swiper-theme-color: #000000;
+    bottom: 215px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    bottom: 305px;
+  }
+}
+
+.swiper-button-next {
+  @media screen and (min-width: $tablet) {
+    right: -21px;
+  }
+  @media screen and (min-width: $desktop) {
+    right: 10px;
+  }
+}
+
+.swiper-button-prev {
+  @media screen and (min-width: $tablet) {
+    left: -21px;
+  }
+  @media screen and (min-width: $desktop) {
+    left: 10px;
+  }
+}

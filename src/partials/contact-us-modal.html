@@ -1,0 +1,68 @@
+<div
+  class="contact-us__backdrop contact-us__backdrop--is-hidden"
+  data-contact-modal
+>
+  <div class="contact-us-modal">
+    <button class="close-btn" type="button" data-contact-modal-close>
+      <svg class="close-btn__icon" width="32" height="32">
+        <use href="./images/icons.svg#cross"></use>
+      </svg>
+    </button>
+    <p class="contact-us-modal__descr">
+      Leave your contacts and we will contact you
+    </p>
+    <form class="contact-us-modal__form" name="contact-us-modal__form">
+      <label class="contact-us-modal__label" for="user_name"> Name </label>
+      <div class="contact-us-modal__box">
+        <input
+          class="contact-us-modal__field"
+          type="text"
+          name="user_name"
+          id="user_name"
+          placeholder="Yuliia"
+          required
+          minlength="2"
+        />
+        <svg class="contact-us-modal__icon-attention" width="22" height="22">
+          <use class="valid" href="./images/icons.svg#valid"></use>
+          <use class="invalid" href="./images/icons.svg#invalid"></use>
+        </svg>
+      </div>
+      <label class="contact-us-modal__label" for="user_phone">
+        Telephone
+      </label>
+      <div class="contact-us-modal__box">
+        <input
+          class="contact-us-modal__field"
+          type="tel"
+          name="user_phone"
+          id="user_phone"
+          placeholder="+380"
+          required
+          minlength="13"
+          maxlength="13"
+        />
+        <svg class="contact-us-modal__icon-attention" width="22" height="22">
+          <use class="valid" href="./images/icons.svg#valid"></use>
+          <use class="invalid" href="./images/icons.svg#invalid"></use>
+        </svg>
+      </div>
+      <label class="contact-us-modal__label" for="user_email"> Email </label>
+      <div class="contact-us-modal__box">
+        <input
+          class="contact-us-modal__field"
+          type="email"
+          name="user_email"
+          id="user_email"
+          placeholder="Contact@gmail.com"
+          required
+        />
+        <svg class="contact-us-modal__icon-attention" width="22" height="22">
+          <use class="valid" href="./images/icons.svg#valid"></use>
+          <use class="invalid" href="./images/icons.svg#invalid"></use>
+        </svg>
+      </div>
+    </form>
+    <button class="submit-btn button" type="submit">Contact us</button>
+  </div>
+</div>
