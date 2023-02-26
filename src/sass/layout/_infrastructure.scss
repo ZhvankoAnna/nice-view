@@ -99,9 +99,8 @@
       }
     }
   }
-}
-.features__item {
-  &:nth-child(3) {
+
+  .features__item:nth-child(3) {
     .features__title {
       padding-left: 5px;
       @media screen and (min-width: $tablet) {
