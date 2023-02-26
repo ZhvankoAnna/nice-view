@@ -1,18 +1,10 @@
 .contacts {
-  border-top: 80px solid transparent;
-  margin-top: -80px;
-  @media screen and (min-width: 768px) {
-    border-top: 100px solid transparent;
-    margin-top: -100px;
-  }
-
   padding-top: 60px;
   padding-bottom: 60px;
 
   @media screen and (min-width: $tablet) {
     padding-top: 100px;
     padding-bottom: 100px;
-
   }
 }
 
@@ -41,10 +33,6 @@
   border-radius: 16px;
   margin-right: auto;
   margin-left: auto;
-
-  @media screen and (max-width: $max-mobile) {
-    // text-align: center;
-  }
 
   @media screen and (min-width: $tablet) {
     padding: 53px 74px;
@@ -78,12 +66,11 @@
   &:not(:last-child) {
     margin-bottom: 14px;
   }
- @media screen and (min-width: $tablet) {
-  &:not(:last-child) {
-    margin-bottom: 24px;
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
   }
- }
-
 }
 
 .contacts__link {
@@ -105,33 +92,11 @@
   stroke: #fcfcfb;
 }
 
-
 @each $item in pin, ring, email {
   .contacts__link--#{$item}::before {
     background-image: url(../images/contacts/icon-#{$item}.svg);
-
-// @media (min-device-pixel-ratio: 2),
-//   (min-resolution: 192dpi),
-//   (min-resolution: 2dppx) {
-//   background-image: url(../images/about/icon-#{$item}@2x.png);
-// }
   }
 }
-
-// .contact__link--pin::before {
-//   content: '';
-//   top: 0;
-//   left: 0;
-//   display: block;
-//   background-position: center;
-//   background-repeat: no-repeat;
-//   width: 24px;
-//   height: 24px;
-//   // stroke: #fcfcfb;
-//   // fill: none;
-//   margin-right: 8px;
-//   background-image: url("data:image/svg+xml,%3Csymbol id='ring' viewBox='0 0 32 32'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='1.333' d='M27.147 20.187a41.182 41.182 0 0 1-4.2-.74 2.073 2.073 0 0 0-2 .387c-.353.36-1.373 1.367-2.433 2.407a19.126 19.126 0 0 1-8.733-8.74c1.033-1.06 2-2.073 2.393-2.427a2.079 2.079 0 0 0 .387-2 41.364 41.364 0 0 1-.74-4.207 1.321 1.321 0 0 0-.996-1.155 1.331 1.331 0 0 0-.537-.025h-5.68a1.001 1.001 0 0 0-.907.913c-.367 5.127 2.493 10.613 3.073 11.667v.04l.08.153a23.624 23.624 0 0 0 8.667 8.667l.293.167c1.333.707 6.633 3.373 11.587 3.007a.999.999 0 0 0 .927-.907v-5.673a1.317 1.317 0 0 0-.667-1.371 1.346 1.346 0 0 0-.513-.162z'/%3E%3C/symbol%3E");
-// }
 
 .contscts__icon {
   stroke: $second-font-color;
@@ -143,20 +108,22 @@
 
 .contacts__btn {
   width: 240px;
-  height: 47px;
+  min-height: 47px;
   background-color: $second-font-color;
   border-radius: 8px;
   border: 1px solid transparent;
 
   font-weight: 300;
   font-size: 16px;
-  line-height: 24px;
+  line-height: calc(24 / 16);
+
+  color: #2d2a22;
 
   color: $dark-font;
 
-  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1), background-color
-    300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms
-    cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.075, 0.82, 0.165, 1),
+    background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -166,7 +133,8 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: 240px;
-    height: 54px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 24px;
   }
 }

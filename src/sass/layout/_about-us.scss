@@ -1,11 +1,4 @@
 .about {
-  border-top: 80px solid transparent;
-  margin-top: -80px;
-  @media screen and (min-width: $tablet) {
-    border-top: 100px solid transparent;
-    margin-top: -100px;
-  }
-
   max-width: 1280px;
   padding-top: 60px;
   padding-bottom: 60px;

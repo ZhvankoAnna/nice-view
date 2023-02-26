@@ -31,17 +31,8 @@
   font-size: 18px;
 
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 
@@ -87,6 +78,10 @@
   --swiper-navigation-size: 12px;
   bottom: 115px;
   z-index: 0;
+
+  @media screen and (max-width: $max-mobile) {
+    display: none;
+  }
 
   @media screen and (min-width: $mobile) {
     bottom: 200px;

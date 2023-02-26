@@ -1,19 +1,7 @@
 .apartments {
-  border-top: 80px solid transparent;
-  margin-top: -80px;
-  @media screen and (min-width: $tablet) {
-    border-top: 100px solid transparent;
-    margin-top: -100px;
-  }
-
-  background-color: $second-font-color;
+  background-color: #fcfcfb;
   padding-top: 24px;
   padding-bottom: 40px;
-}
-
-.apartments__container {
-  // display: flex;
-  // flex-direction: column;
 }
 
 .apartments__title {
@@ -58,12 +46,6 @@
   justify-content: center;
   cursor: pointer;
 
-  // padding: 20px 22px;
-
-  // @media screen and(min-width:768px) {
-  //   padding: 20px 58px;
-  // }
-
   &:hover,
   &:focus {
     border-color: rgba(126, 109, 83, 1);
@@ -84,9 +66,6 @@
   @media screen and(min-width: $tablet) {
     padding: 20px 58px;
   }
-}
-
-.apartments__link {
 }
 
 .apartments__img {

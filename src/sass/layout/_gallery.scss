@@ -1,11 +1,4 @@
 .gallery {
-  border-top: 80px solid transparent;
-  margin-top: -80px;
-  @media screen and (min-width: $tablet) {
-    border-top: 100px solid transparent;
-    margin-top: -100px;
-  }
-
   padding-top: 60px;
 
   @media screen and (min-width: $tablet) {
@@ -50,8 +43,3 @@
   }
 
 }
-
-// .gallery .container {
-//   outline: 1px solid red;
-//   outline-offset: -2px;
-// }
